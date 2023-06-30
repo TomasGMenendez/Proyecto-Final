@@ -1,0 +1,10 @@
+@mixin conjunto-tipo($colores:black, $tamañol:50px, $fuentes){
+    font-family: $fuentes;
+    font-size: $tamañol;
+    color: $colores;
+}
+
+@mixin conjunto-fondos($fondobac, $borderbot){
+    background-color: $fondo;
+    border-bottom: $borderbot;
+}

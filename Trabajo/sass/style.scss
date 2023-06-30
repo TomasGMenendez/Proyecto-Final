@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import'./variables';
+@import'./mixin';
+*{
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+/* COLOR DE FONDO*/
+#body-index {
+  background-color: rgba(197, 235, 253, 0.788);
+}
+
+#body-acerca-de-nosotros {
+  background-color: rgb(166, 193, 197);
+}
+
+#body-perros {
+  background-color: #ece3dc;
+}
+
+#body-contacto {
+  background-color: rgb(141, 161, 241);
+}
+
+#body-sobre-la-raza{
+  background: linear-gradient( to bottom, #eeffef, #f7e333);
+}
+
+/* CIERRE COLOR DE FONDO*/
+
+/* CIERRE COLOR DE FONDO*/
+
+/* NAVEGADOR */
+
+.navbar {
+  border-bottom: 4px solid rgb(226, 198, 144);
+
+&-brand {
+  font-size: 35px;
+}
+
+.navbar-brand:hover {
+  border-bottom: 4px solid rgb(248, 213, 148);
+}
+
+.nav-item {
+  margin-left: 200px;
+  font-size: 23px;
+  font-family: "Playfair", serif;
+}
+
+.nav-link:hover {
+  border-bottom: 4px solid rgb(248, 213, 148);
+}
+.navbar-text {
+  font-size: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+}
+/*CIERRE NAVEGADOR*/
+
+/* CARRUSEL*/
+#carouselExampleFade {
+width: 750px;
+left: 500px;
+top: 325px;
+z-index: 10;
+border: 5px solid yellow;
+
+
+}
+/* CIERRE CARRUSEL*/
+
+/* TEXTO INDEX */
+
+.divind {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  background-color: #9bf8fce8;
+  flex-flow: column wrap;
+  position: relative;
+  bottom: 434px;
+
+  &_h3i {
+    align-self: center;
+    font-family: $tipografia;
+    font-size: $tamañoletra;
+  }
+
+  .divind_h3_p {
+    margin: 50px;
+    font-weight: bold;
+  }
+}
+/* CIERRE TEXTO INDEX*/
+
+/* ACERCA DE NOSOTROS*/
+
+
+.divac{
+  width: 100%;
+  height: 570px;
+  background-color: rgba(29, 170, 206, 0.123);
+  display: flex;
+  flex-flow: wrap column;
+
+
+  &_h1{    
+    font-family: $tipografia;
+    font-size: 100px;
+  align-self: center;}
+
+
+
+    &_h1:hover{
+      color: antiquewhite;
+      display: inline-block;
+      border-bottom: 6px solid rgb(243, 237, 160); 
+      }
+
+
+    .div_h1_p{
+      font-size: 20px;
+      font-weight: $bold;
+      color: #161b5e;
+}
+
+}
+
+
+.section-acerca-de-nosotros {
+  display: flex; 
+
+
+        .fotos-acerca-de-nosotros{
+        flex-wrap: wrap;
+        width: 460px;
+        height: 340px;}
+}
+
+
+
+/* CIERRE ACERCA DE NOSOTROS*/
+
+/* PERROS */
+
+.section12{
+    background-color: rgba(255, 229, 181, 0.719);
+    width: 100%;
+    height: 70vh; 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+
+        .header1_img {
+        width: 350px;
+        height: 300px;
+        border: 4px solid rgba(212, 163, 58, 0.849);
+        }
+
+        
+}
+
+.footer {
+  background-color: rgba(29, 147, 243, 0.377);
+  width: 100%;
+  border-top: 3px solid rgb(218, 202, 63);
+  height: 700px;
+  display: flex;
+  flex-flow: wrap column;
+
+  &_h3{
+    font-size: $tamañoletra;
+    font-family: $tipografia;
+    color: $color;
+    border-bottom: 5px solid rgb(230, 238, 123);
+    border-right: 5px solid rgb(230, 238, 123);
+    border-left: 5px solid rgb(230, 238, 123) ;
+    align-self: center;
+  }
+            /* no me deja selecionar con &*/
+            .footer_h3_pl{
+            color: #040505;
+            font-size: 17px;
+            font-weight: $bold;
+            margin: 50px;
+            }
+}
+
+/*  CIERRE PERROS */
+
+/* CONTACTO*/
+
+.divco{
+  width: 100%;
+  height: 250px;
+  background-color: #b6eafa86;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+    &_h3{
+    color: white;
+    font-family: $tipografia;
+    font-size: 100px;
+    border: 5px solid rgba(228, 255, 131, 0.808);
+    padding: 40px;
+    }
+}
+
+.mb-3 {
+  margin: 50px;
+  width: 550px;
+  display: flex;
+  flex-flow: wrap column;
+  margin-left: 350px;
+}
+
+.form-label{
+  color:#040505;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* CIERRE CONTACTO*/
+
+/* SOBRE LA RAZA*/
+
+.divso {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(29, 171, 206, 0.596);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap ;
+
+
+        &_h1 {
+          color: aliceblue;
+          font-family: $tipografia;
+          font-size: 100px;
+          border-bottom: 8px solid rgba(248, 223, 154, 0.932);
+          }
+}
+
+.sectionso{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(80, 37, 37, 0.281); 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;        
+
+
+  &_p{
+    margin: 30px;
+    font-size: 20px;
+    font-weight: $bold;
+    }
+
+}
+
+.footerso {
+background-color: rgba(95, 253, 192, 0.788);
+display: grid;
+grid-template-columns: 270px 290px 300px;
+grid-template-rows: auto auto;
+gap: 7px 3px;
+justify-items: center;
+justify-content: space-around;
+
+    &_img{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 450px;
+      height: 250px;
+    }
+}
+  
+/* MEDIA QUERIES*/
+
+@media (max-width: 393px) {
+
+  .divind{
+
+    display: flex;
+    flex-flow: wrap ;
+    height: 700px;
+
+  &_h3i{
+  align-self: center;
+  font-size: 40px;
+  color: red;
+  }
+
+    .divind_h3_p{
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 0px;
+      }
+          }
+
+.carousel{
+}
+}
+
